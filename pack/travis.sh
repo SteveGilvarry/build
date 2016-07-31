@@ -191,6 +191,7 @@ if [ "${PACK}" == "rpm" ]; then
         exit 1
     fi
 elif [ "${PACK}" == "deb" ]; then
+    ln -sf distros/ubuntu1604 debian
     if [ -d "debian/" ]; then
         echo "Found debian/"
         ${SCRIPT_DIR}/build PRODUCT=${PRODUCT} \
