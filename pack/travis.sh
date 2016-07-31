@@ -34,7 +34,7 @@ fi
 
 # Save git describe result to VERSION file
 echo ${VERSION} > VERSION
-
+cat VERSION
 if [ "$PACK" == "none" ]; then
     echo 'Test mode'
     if [ -f test.sh ]; then
